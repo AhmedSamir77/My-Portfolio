@@ -1,18 +1,14 @@
 @media (max-width: 576px) {
-    .content h1 {
-      font-size: 2rem;
-    }
-    .colorBox-content {
-      padding: 1rem;
-    }
-    .colorBoxIcon {
-      padding: 0.5rem;
-    }
+  .content h1 {
+    font-size: 2rem;
   }
-
-
-
-
+  .colorBox-content {
+    padding: 1rem;
+  }
+  .colorBoxIcon {
+    padding: 0.5rem;
+  }
+}
 
 /* general */
 :root {
@@ -382,123 +378,123 @@ header {
 /* start about */
 
 #about {
-    height: 80%;
-  }
-  
-  #about .inner {
-    background-image: url("../images/dots.png");
-    height: 80%;
-    position: relative;
-    top: 80px;
-  
-  }
-  
-  #about .inner img {
-    position: relative;
-    left: 30px;
-    bottom: 120px;
-   
-  }
-  
-  #about .about-content h3 {
-    color: RGB(52, 52, 52);
-    font-size: 30px;
-    font-weight: 800;
-  }
-  
-  #about .about-content .UI {
-    color: RGB(153, 153, 153);
-    font-size: 14px;
-    font-weight: 400;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  #about .about-content p {
-    color: RGB(116, 129, 130);
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-  }
-  
-  #about .about-content .custom {
-    position: absolute;
-    left: 10px;
-  }
-  
-  #about .about-content .custom-1 {
-    position: absolute;
-    right: 10px;
-  }
-  #about .progress {
-    height: 3.5vh;
-    box-shadow: inset gray 2px 2px 10px 1px;
-  }
-  
-  #about .btn-content .btn-custom-1 {
-    transition: all 0.4s;
-  }
-  
-  #about .btn-content .btn-custom-1:hover {
-    background-color: white;
-    color: black;
-  }
-  
-  #about .btn-content .btn-custom-2 {
-    transition: all 0.4s;
-  }
-  
-  #about .btn-content .btn-custom-2:hover {
-    background-color: black;
-    color: white;
-  }
-  /* end about */
-  
+  height: 80%;
+}
 
+#about a {
+  text-decoration: none;
+}
+
+#about .inner {
+  background-image: url("../images/dots.png");
+  height: 80%;
+  position: relative;
+  top: 10px;
+}
+
+#about .inner img {
+  position: relative;
+  left: 0px;
+  bottom: 0px;
+}
+
+#about .about-content h3 {
+  color: RGB(52, 52, 52);
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#about .about-content .UI {
+  color: RGB(153, 153, 153);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+#about .about-content p {
+  color: RGB(116, 129, 130);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#about .about-content .custom {
+  position: absolute;
+  left: 10px;
+}
+
+#about .about-content .custom-1 {
+  position: absolute;
+  right: 10px;
+}
+#about .progress {
+  height: 3.5vh;
+  box-shadow: inset gray 2px 2px 10px 1px;
+}
+
+#about .btn-content .btn-custom-1 {
+  transition: all 0.4s;
+}
+
+#about .btn-content .btn-custom-1:hover {
+  background-color: white;
+  color: black;
+}
+
+#about .btn-content .btn-custom-2 {
+  transition: all 0.4s;
+}
+
+#about .btn-content .btn-custom-2:hover {
+  background-color: black;
+  color: white;
+}
+/* end about */
 
 /* start details */
 #details {
-    height: 100%;
-    background-image: url("../images/counters-bg.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  
-  .col-custom{
-   padding-bottom: 80px;
-  }
+  height: 100%;
+  background-image: url("../images/counters-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
-  @media (max-width: 767.98px) {
-    .col-custom {
-      padding-bottom: 0px;
-    }
+.col-custom {
+  padding-bottom: 80px;
+}
+
+@media (max-width: 767.98px) {
+  .col-custom {
+    padding-bottom: 0px;
   }
-  #details .inner {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  #details .icon {
-    border: 10px solid #cde1f8;
-  }
-  
-  #details .info {
-    position: relative;
-    top: 85px;
-    left: 5px;
-  }
-  #details .info p {
-    color: white;
-  }
-  
-  #details .layer {
-    background-color: rgba(0, 120, 255, 0.7);
-  }
-  /* end details */
-  
+}
+#details .inner {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#details .icon {
+  border: 10px solid #cde1f8;
+}
+
+#details .info {
+  position: relative;
+  top: 85px;
+  left: 5px;
+}
+#details .info p {
+  color: white;
+}
+
+#details .layer {
+  background-color: rgba(0, 120, 255, 0.7);
+}
+/* end details */
+
 /* start portfolio */
-#portfolio{
-    position: relative;
-    top: 60px;
+#portfolio {
+  position: relative;
+  top: 60px;
 }
 
 #portfolio .section-title p {
@@ -653,9 +649,6 @@ header {
 }
 /* end footer */
 
-
-
-
 /* social */
 
 .one {
@@ -669,10 +662,10 @@ header {
   transform: rotateY(360deg);
   opacity: 1;
 }
-.one:hover .img {
+.one:hover img {
   transform: scale(1.2);
 }
-.img {
+.one img {
   transition: all 0.5s;
   width: 100%;
 }
@@ -716,7 +709,5 @@ header {
   align-items: center;
   justify-content: center;
 }
-
-
 
 /* end social */
