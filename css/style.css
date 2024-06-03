@@ -352,7 +352,7 @@ header {
 }
 
 .navbar .nav-item .nav-blog:hover a::after {
-  width: 35px;
+  width: 55px;
 }
 
 .navbar .nav-item .nav-contact a {
@@ -494,7 +494,7 @@ header {
 /* start portfolio */
 #portfolio {
   position: relative;
-  top: 60px;
+  top: 20px;
 }
 
 #portfolio .section-title p {
@@ -520,6 +520,7 @@ header {
 
 #portfolio .inner img {
   transition: all 1s;
+  cursor: pointer;
 }
 #portfolio .inner:hover img {
   transform: scale(1.3);
@@ -595,6 +596,11 @@ header {
   background-attachment: fixed;
 }
 
+#footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
 #footer .layer {
   background-color: rgba(0, 120, 255, 0.7);
 }
@@ -646,6 +652,10 @@ header {
 .end {
   height: 10vh;
   background-color: #0062d3;
+}
+
+textarea {
+  resize: none;
 }
 /* end footer */
 
