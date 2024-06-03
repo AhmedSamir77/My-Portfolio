@@ -127,7 +127,9 @@ header {
 .content h1 {
   font-size: 72px;
 }
-
+.spec-title h1 {
+  color: #9d947f;
+}
 .content p {
   font-size: 40px;
 }
