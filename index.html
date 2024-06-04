@@ -119,7 +119,7 @@
           class="cont h-100 d-flex justify-content-center align-items-center"
         >
           <div class="content spec-title text-white">
-            <h1>I'm Ahmed Samir</h1>
+            <h1 class="fonty">I'm Ahmed Samir</h1>
             <p class="text-center"></p>
           </div>
         </div>
@@ -342,7 +342,9 @@
       <div class="container">
         <div class="text-center section-title py-5">
           <h3 class="fs-1 fw-bold">PROJECTS</h3>
-          <p class="fs-5">Discover My Latest Web Development Achievements</p>
+          <p class="fs-4 fonty2">
+            Discover My Latest Web Development Achievements
+          </p>
         </div>
       </div>
 
@@ -534,43 +536,54 @@
         <div class="container bg-white py-4 px-4">
           <div class="row">
             <div class="col-sm-12 col-md-6">
-              <h5 class="fs-2 pb-2">Send Message</h5>
+              <div class="d-flex moving">
+                <h5 class="fs-2 pb-2">Send Message</h5>
+                <i class="fs-2 ms-4 mt-2 fa-solid fa-envelope"></i>
+              </div>
 
               <div class="inner mt-4">
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  class="w-100 p-2 my-2"
-                />
-                <input
-                  type="text"
-                  placeholder="Your Email"
-                  class="w-100 p-2 my-2"
-                />
-                <input
-                  type="text"
-                  placeholder="Subject"
-                  class="w-100 p-2 my-2"
-                />
-                <textarea
-                  name=""
-                  id=""
-                  class="w-100 p-2 my-2"
-                  rows="4"
-                  placeholder="Message"
-                ></textarea>
+                <form id="contactForm">
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    class="w-100 p-2 my-2"
+                  />
+                  <input
+                    type="text"
+                    id="email"
+                    placeholder="Your Email"
+                    class="w-100 p-2 my-2"
+                  />
+                  <input
+                    type="text"
+                    id="subject"
+                    placeholder="Subject"
+                    class="w-100 p-2 my-2"
+                  />
+                  <textarea
+                    name="message"
+                    id="message"
+                    class="w-100 p-2 my-2"
+                    rows="4"
+                    placeholder="Message"
+                  ></textarea>
 
-                <div class="w-100 text-center mt-3 pb-4">
-                  <button class="btn btn-primary rounded-5 px-4 py-2">
-                    Submit
-                  </button>
-                </div>
+                  <div class="w-100 text-center mt-3 pb-4">
+                    <button class="btn btn-primary rounded-5 px-4 py-2">
+                      Submit
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
 
             <div class="col-sm-12 col-md-6">
-              <h5 class="fs-2 pb-2">Get in Touch</h5>
-              <p class="lead mt-4 pt-2">
+              <div class="d-flex moving">
+                <h5 class="fs-2 pb-2">Get in Touch</h5>
+                <i class="fs-2 ms-4 mt-2 fa-solid fa-phone-flip"></i>
+              </div>
+              <p class="lead mt-4 pt-2 fonty3">
                 let's create something amazing together! Whether you're looking
                 to collaborate on a project or just want to chat about the
                 latest trends in tech, I'm here to listen. Don't hesitate to

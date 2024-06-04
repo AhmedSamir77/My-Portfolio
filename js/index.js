@@ -57,3 +57,28 @@ $(document).ready(function () {
     });
   });
 });
+
+//sending data from the form
+document.addEventListener("DOMContentLoaded", () => {
+  document
+    .getElementById("contactForm")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const subject = document.getElementById("subject").value;
+      const message = document.getElementById("message").value;
+
+      console.log("Name:", name);
+      console.log("Email:", email);
+      console.log("Subject:", subject);
+      console.log("Message:", message);
+
+      // Clear all inputs
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("subject").value = "";
+      document.getElementById("message").value = "";
+    });
+});
