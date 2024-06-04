@@ -502,6 +502,9 @@ header {
 #portfolio .section-title p {
   position: relative;
 }
+.unique{
+  color: var(--main-color);
+}
 
 #portfolio .section-title p::after {
   content: "";

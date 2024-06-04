@@ -47,7 +47,7 @@ $(document).ready(function () {
   spans.click(function (e) {
     let currentColor = $(e.target).css("backgroundColor");
 
-    $("h1, h2").css("color", currentColor);
+    $("h1, h2,h3").css("color", currentColor);
     $(":root").css("--main-color", currentColor);
   });
 
