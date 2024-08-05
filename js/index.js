@@ -82,3 +82,47 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("message").value = "";
     });
 });
+/////////////////////////
+// count UP
+
+document.addEventListener("DOMContentLoaded", function () {
+  function countUp(element, endValue) {
+    let startValue = 0;
+    const duration = 2500;
+    const increment = endValue / (duration / 16);
+
+    function updateCount() {
+      startValue += increment;
+      if (startValue < endValue) {
+        element.textContent = Math.floor(startValue);
+        requestAnimationFrame(updateCount);
+      } else {
+        element.textContent = endValue;
+      }
+    }
+
+    updateCount();
+  }
+
+  function handleIntersection(entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const element = entry.target;
+        const endValue = parseInt(element.getAttribute("data-value"));
+        countUp(element, endValue);
+        observer.unobserve(element);
+      }
+    });
+  }
+
+  const observer = new IntersectionObserver(handleIntersection, {
+    threshold: 0.5,
+  });
+
+  const counters = document.querySelectorAll(".info p:first-of-type");
+  counters.forEach((counter) => {
+    counter.setAttribute("data-value", counter.textContent);
+    counter.textContent = "0"; // Set initial value to 0
+    observer.observe(counter);
+  });
+});
